@@ -28,4 +28,4 @@ n
 \Big]
 $$
 
-where $ \varphi = \phi_2 - \phi_1 $ is the phase difference.
+where $\varphi = \phi_2 - \phi_1$ is the phase difference.
