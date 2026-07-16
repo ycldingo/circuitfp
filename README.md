@@ -1,9 +1,15 @@
+![Version](https://img.shields.io/badge/version-0.1.0-cyan)
+![Primary](https://img.shields.io/badge/Primary-Python-blue?logo=python&logoColor=white)
+![Secondary](https://img.shields.io/badge/Secondary-Mathematica-red?logo=wolfram&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+
 # circuitfp
 This is the official repository for the publication ["Circuit quantization from first principles", _Phys. Rev. Research_ **7**, 033144 (2025)](https://journals.aps.org/prresearch/abstract/10.1103/dfrq-44vk).
 
-[![GitHub Release](https://shields.io)](https://github.com)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+
+
+
 
 ---
 
