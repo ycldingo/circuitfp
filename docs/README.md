@@ -8,13 +8,13 @@ his documentation provides detaied descriptions of the mathematical and theoreti
 
 ## Physics background
 
-- [Theory](Liao et al. - 2025 - Circuit quantization from first principles.pdf)
+- [Theory](Liao_et_al_-_2025_-_Circuit_quantization_from_first_principles.pdf)
 introduces the microscopic BCS formalism of the first-principles circuit quantisation and the motivation of the package.
 
 
 ## API reference
 
--[Overlap](Overlap.md)
+- [Overlap](Overlap.md)
 documents the `Overlap` class, including
 
 - mathematical formulation
