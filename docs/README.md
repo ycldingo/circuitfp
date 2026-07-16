@@ -24,6 +24,13 @@ documents the `Overlap` class, including
 - examples
 
 
+## Development
+
+- [Development Notes](development.md)
+
+Project roadmap, coding conventions, and future plans.
+
+
 
 ---
 
