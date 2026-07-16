@@ -42,24 +42,26 @@ Returnd $\mathcal{W} (\phi_1, \phi_2)$
 | scalar | complex |
 | ndarray | ndarray |
 
-Example
+### Example 
 
 ```python
-Overlap(B=1, gap=0.001, n=10**3, phase1=0, phase2=np.pi/3).overlap()
+Overlap(B=1, gap=0.001, n=10**3, phase1=0, phase2=np.pi/7).overlap()
 ```
+
+outputs a complex number.
 
 ## overlap_matrix()
 
 This function constructs the overlap matrix $\mathcal{W}_{ij} = \mathcal{W}(\phi_i,\phi_j)$.
 
-Requirements
+### Requirements
 
 - `phase1` and `phase2` must both be one-dimensional array
 - `phase1` and `phase2` must have identical grids
 
 Returns `complex ndarray` of shape `(N,N)`, where `N` is the number of elements in `phase1` or `phase2` array
 
-Example
+### Example
 
 ```python
 phase = np.linspace(-np.pi, ip.pi, 501)
