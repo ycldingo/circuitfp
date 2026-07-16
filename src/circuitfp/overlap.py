@@ -15,7 +15,11 @@ class Overlap:
         # Calculate the overlap value based on the phase difference
         overlap_value = np.exp(self.num_modes * (
             1j * self.phase_difference / 2
-            +
+            -
             np.pi * self.gap / (16 * self.bandwidth)
-        ))
+            *
+            self.phase_difference**2
+        )
+        )
         return overlap_value
+    

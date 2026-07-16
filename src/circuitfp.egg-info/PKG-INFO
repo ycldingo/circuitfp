@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: circuitfp
+Version: 0.1.0
+Summary: Circuit quantization from first principles
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: license-file

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circuitfp"
+version = "0.1.0"
+authors = [
+    { name = "Yun-Chih Liao", email = "yunchih.liao@uq.edu.au"}
+]
+description = "Python package associated with Circuit quantization from first principles"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
