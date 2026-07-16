@@ -17,11 +17,11 @@ introduces the microscopic BCS formalism of the first-principles circuit quantis
 - [Overlap](Overlap.md)
 documents the `Overlap` class, including
 
-- mathematical formulation
-- constructor arguments
-- methods
-- return values
-- examples
+    - mathematical formulation
+    - constructor arguments
+    - methods
+    - return values
+    - examples
 
 
 ## Development
