@@ -23,6 +23,29 @@ This project is based on
 - Hamiltonian projection
 - and more...
 
+### Repository structure
+```
+circuitfp/
+
+├── src/
+│   └── circuitfp/
+│       ├── overlap.py
+│       ├── ...
+│
+├── tests/
+│       ├── test_overlap.py
+│       ├── ...
+│
+├── examples/
+│       ├── ...
+│
+├── docs/
+│       ├── ...
+│
+└── README.md
+
+
+
 ---
 
 ## Installation
