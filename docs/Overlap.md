@@ -11,19 +11,21 @@ The `Overlap` class evaluates the overlap bwteen two BCS phase states.
 
 The overlap between two BCS phase states is given by
 
-\[
-W(\phi_1,\phi_2)
+$$
+\mathcal{W}(\phi_1,\phi_2)
+\equiv
+\langle \Psi(\phi_1) | \Psi(\phi_2) \rangle
 =
 \exp
-\left[
+\Big[
 n
-\left(
-\frac{i}{2}\Delta\phi
+\Big(
+\frac{i}{2}\varphi
 -
-\frac{\pi\Delta}{16B}
-(\Delta\phi)^2
-\right)
-\right]
-\]
+\frac{\pi\Delta}{16 \mathcal{B}}
+\varphi^2
+\Big)
+\Big]
+$$
 
-where \( \varphi = \phi_2 - \phi_1 \) is the phase difference.
+where $ \varphi = \phi_2 - \phi_1 $ is the phase difference.
