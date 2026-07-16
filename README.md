@@ -9,7 +9,7 @@ circuitfp provides numerical tools for constructing low-energy Hilbert space dir
 
 This project is based on 
 > Yun-Chih Liao, Benjamin J. Powell & Thomas M. Stace
-> ["Circuit quantization from first principles", _Phys. Rev. Research_ **7**, 033144 (2025)]
+> ["Circuit quantization from first principles", _Phys. Rev. Research_ **7**, 033144 (2025)](https://journals.aps.org/prresearch/abstract/10.1103/dfrq-44vk)
 
 ### Current features
 - Overlap of BCS phase states
