@@ -12,7 +12,9 @@ description = "Python package associated with Circuit quantization from first pr
 requires-python = ">=3.11"
 
 dependencies = [
-    "numpy"
+    "numpy",
+    "scipy",
+    "matplotlib"
 ]
 
 [tool.setuptools]
