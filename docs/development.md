@@ -9,6 +9,7 @@
 
 ## Next milestone
 
+- Basis construction
 - Fourier transform
 - Phase operator
 - Number operator

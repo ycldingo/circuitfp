@@ -2,10 +2,11 @@ import numpy as np
 
 class Overlap:
 
-    def __init__(self, B=None, gap=None, n=None, basis=None, phase1, phase2):
+    def __init__(self, phase1, phase2, B=None, gap=None, n=None, basis=None):
         self.bandwidth = B
         self.gap = gap
         self.num_modes = n
+        self.basis = basis
         self.phase1 = np.asarray(phase1)
         self.phase2 = np.asarray(phase2)
 
@@ -52,13 +53,13 @@ class Overlap:
             )
             
         # Create an overlap matrix for the given num_modes in phase space
-        dph = self.phase1[:, None] - self.phase2[None, :]
+        phase_difference = self.phase1[:, None] - self.phase2[None, :]
         overlap_matrix = np.exp(self.num_modes * (
-            1j * dph / 2
+            1j * phase_difference / 2
             -
             np.pi * self.gap / (16 * self.bandwidth)
             *
-            dph**2
+            phase_difference**2
         )
         )
         return overlap_matrix   
