@@ -1,8 +1,9 @@
 # circuitfp
 This is the official repository for the publication ["Circuit quantization from first principles", _Phys. Rev. Research_ **7**, 033144 (2025)](https://journals.aps.org/prresearch/abstract/10.1103/dfrq-44vk).
 
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![GitHub Release](https://shields.io)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 
 ---
 
