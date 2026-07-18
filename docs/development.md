@@ -1,11 +1,16 @@
 # Development notes
 
-**Current version: 0.1.0**
+**Current version: 0.1.1**
 
 ## Implemented
 
 - overlap()
 - overlap_matrix()
+
+### Documentation
+
+- API example notebook:
+    - [`examples/BCS_overlap.ipynb`](BCS_overlap.ipynb)
 
 ## Next milestone
 
@@ -18,3 +23,4 @@
 
 - Numpy style
 - pytest required
+ - Examples provided as Jupyter notebooks

@@ -32,6 +32,10 @@ class Overlap:
             phase_difference**2
         )
         )
+
+        if np.ndim(overlap_value) == 0:
+            return overlap_value.item()  # Return as a scalar if it's a single value
+        
         return overlap_value
     
 
