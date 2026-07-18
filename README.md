@@ -51,6 +51,11 @@ circuitfp/
 │       ├── ...
 │
 ├── docs/
+│       ├── conventions.md
+│       ├── development.md
+│       ├── CHANGELOG.md
+│       ├── Overlap.md
+│       ├── ...Liao_et_al_-_2025_-_Circuit_quantization_from_first_principles.pdf
 │       ├── ...
 │
 └── README.md
