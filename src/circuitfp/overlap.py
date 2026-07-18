@@ -23,7 +23,7 @@ class Overlap:
 
     def overlap(self):
         # Calculate the overlap value based on the phase difference
-        phase_difference = self.phase1 - self.phase2
+        phase_difference = np.asarray(self.phase1) - np.asarray(self.phase2)
         overlap_value = np.exp(self.num_modes * (
             1j * phase_difference / 2
             -
@@ -57,7 +57,7 @@ class Overlap:
             )
             
         # Create an overlap matrix for the given num_modes in phase space
-        phase_difference = self.phase1[:, None] - self.phase2[None, :]
+        phase_difference = np.asarray(self.phase1)[:, None] - np.asarray(self.phase2)[None, :]
         overlap_matrix = np.exp(self.num_modes * (
             1j * phase_difference / 2
             -
