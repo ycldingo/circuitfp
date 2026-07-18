@@ -5,7 +5,7 @@
 ### Added
 
 - First example notebook (`examples/BCS_overlap.ipynb`)
-- Examples [README](README.md)
+- Examples README.md
 
 ### Changed
 
