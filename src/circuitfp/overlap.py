@@ -2,10 +2,10 @@ import numpy as np
 
 class Overlap:
 
-    def __init__(self, phase1, phase2, B=None, gap=None, n=None, basis=None):
-        self.bandwidth = B
+    def __init__(self, phase1=None, phase2=None, bandwidth=None, gap=None, num_modes=None, basis=None):
+        self.bandwidth = bandwidth
         self.gap = gap
-        self.num_modes = n
+        self.num_modes = num_modes
         self.basis = basis
         self.phase1 = np.asarray(phase1)
         self.phase2 = np.asarray(phase2)
@@ -15,9 +15,9 @@ class Overlap:
             self.gap = basis.gap
             self.num_modes = basis.num_modes
         else:
-            self.bandwidth = B
+            self.bandwidth = bandwidth
             self.gap = gap
-            self.num_modes = n
+            self.num_modes = num_modes
 
     
 
