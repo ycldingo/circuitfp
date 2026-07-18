@@ -7,9 +7,6 @@
 - First example notebook (`examples/BCS_overlap.ipynb`)
 - Examples README.md
 
-### Changed
-
-- Updated development roadmap
 
 ---
 
