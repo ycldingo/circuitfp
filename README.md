@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.1.0-cyan)
+![Version](https://img.shields.io/badge/version-0.1.1-cyan)
 ![Primary](https://img.shields.io/badge/Primary-Python-blue?logo=python&logoColor=white)
 ![Secondary](https://img.shields.io/badge/Secondary-Mathematica-red?logo=wolfram&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
