@@ -22,6 +22,12 @@ documents the `Overlap` class, including
     - methods
     - return values
     - examples
+- [PhaseBasis](PhaseBasis.md)
+documents the `PhaseBasis` class, including
+
+    - mathematical background
+    - usage
+    - relationship with `Overlap` 
 
 
 ## Development
@@ -30,6 +36,12 @@ documents the `Overlap` class, including
 
 Project roadmap, coding conventions, and future plans.
 
+
+## Convention
+
+- [Mathematical Convention](conventions.md)
+
+Conventions and definitions of functions used in the project.
 
 
 ---
