@@ -1,11 +1,15 @@
 # Development notes
 
-**Current version: 0.1.1**
+**Current version: 0.1.2**
 
 ## Implemented
 
-- overlap()
-- overlap_matrix()
+- overlap function and overlap matrix
+- effective dimensionality estimation
+    - automatic dimension selection: user-defined dimension support
+    - protection against insufficient basis dimension
+    - uniform phase-grid generatioin
+- phase basis construction
 
 ### Documentation
 
@@ -14,7 +18,6 @@
 
 ## Next milestone
 
-- Basis construction
 - Fourier transform
 - Phase operator
 - Number operator
@@ -23,4 +26,4 @@
 
 - Numpy style
 - pytest required
- - Examples provided as Jupyter notebooks
+- Examples provided as Jupyter notebooks

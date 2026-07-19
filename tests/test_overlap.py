@@ -58,41 +58,40 @@ def test_overlap_matrix_vector():
     gap=0.1
     n=100
 
-    phase1 = np.linspace(0,1,7)
-    phase2 = phase1
+    phase_grid = np.linspace(0,1,7)
 
-    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase1, phase2=phase2)
+    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase_grid=phase_grid)
     overlap_matrix = ov.overlap_matrix()
 
-    assert overlap_matrix.shape == (len(phase1), len(phase2))
+    assert overlap_matrix.shape == (len(phase_grid), len(phase_grid))
 
 
-def test_overlap_matrix_shape_mismatch():
-    B=1.0
-    gap=0.1
-    n=100
+# def test_overlap_matrix_shape_mismatch():
+#     B=1.0
+#     gap=0.1
+#     n=100
 
-    phase1 = np.linspace(0,1,7)
-    phase2 = np.linspace(0,1,5)
+#     phase1 = np.linspace(0,1,7)
+#     phase2 = np.linspace(0,1,5)
 
-    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase1, phase2=phase2)
+#     ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase1, phase2=phase2)
 
-    with pytest.raises(ValueError):
-        ov.overlap_matrix()
+#     with pytest.raises(ValueError):
+#         ov.overlap_matrix()
 
 
-def test_overla_matrix_identical_grid():
-    B=1.0
-    gap=0.1
-    n=100
+# def test_overla_matrix_identical_grid():
+#     B=1.0
+#     gap=0.1
+#     n=100
 
-    phase1 = np.linspace(0,1,7)
-    phase2 = np.linspace(0,1,8)
+#     phase1 = np.linspace(0,1,7)
+#     phase2 = np.linspace(0,1,8)
 
-    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase1, phase2=phase2)
+#     ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase1, phase2=phase2)
 
-    with pytest.raises(ValueError):
-        ov.overlap_matrix()
+#     with pytest.raises(ValueError):
+#         ov.overlap_matrix()
 
 
 def test_overlap_matrix_hermitian():
@@ -102,7 +101,7 @@ def test_overlap_matrix_hermitian():
 
     phase = np.linspace(-np.pi, np.pi, 10)
 
-    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase1=phase, phase2=phase)
+    ov = Overlap(bandwidth=B, gap=gap, num_modes=n, phase_grid=phase)
     overlap_matrix = ov.overlap_matrix()
 
     assert np.allclose(overlap_matrix, overlap_matrix.conj().T)

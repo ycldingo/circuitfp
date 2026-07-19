@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.1.1-cyan)
+![Version](https://img.shields.io/badge/version-0.1.2-cyan)
 ![Primary](https://img.shields.io/badge/Primary-Python-blue?logo=python&logoColor=white)
 ![Secondary](https://img.shields.io/badge/Secondary-Mathematica-red?logo=wolfram&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -24,6 +24,7 @@ This project is based on
 ### Current features
 - Overlap of BCS phase states
 - Overlap matrix in phase representation
+- Phases basis construction
 - Unit tests
 
 ### Future versions will include
@@ -40,10 +41,12 @@ circuitfp/
 ├── src/
 │   └── circuitfp/
 │       ├── overlap.py
+│       ├── phase_basis.py
 │       ├── ...
 │
 ├── tests/
 │       ├── test_overlap.py
+│       ├── test_phase_basis.py
 │       ├── ...
 │
 ├── examples/
@@ -55,7 +58,7 @@ circuitfp/
 │       ├── development.md
 │       ├── CHANGELOG.md
 │       ├── Overlap.md
-│       ├── ...Liao_et_al_-_2025_-_Circuit_quantization_from_first_principles.pdf
+│       ├── Liao_et_al_-_2025_-_Circuit_quantization_from_first_principles.pdf
 │       ├── ...
 │
 └── README.md
