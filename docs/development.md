@@ -10,20 +10,24 @@
     - protection against insufficient basis dimension
     - uniform phase-grid generatioin
 - phase basis construction
+- operators in phase space, including
+    - identity operator
+    - phase operator
 
 ### Documentation
 
 - API example notebook:
-    - [`examples/BCS_overlap.ipynb`](BCS_overlap.ipynb)
+    - `examples/BCS_overlap.ipynb`
+    - `examples/phase_basis_and_phase_operators.ipynb`
 
 ## Next milestone
 
 - Fourier transform
-- Phase operator
 - Number operator
+- Hamiltonian
 
 ## Coding conventions
 
-- Numpy style
-- pytest required
+- `numpy` style
+- `pytest` required
 - Examples provided as Jupyter notebooks

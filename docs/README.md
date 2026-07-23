@@ -28,6 +28,11 @@ documents the `PhaseBasis` class, including
     - mathematical background
     - usage
     - relationship with `Overlap` 
+- [PhaseOperators](PhaseOperators.md) 
+documents the `PhaseOperators` class, including
+
+    - definitions of operators 
+    - usage
 
 
 ## Development

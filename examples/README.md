@@ -18,6 +18,16 @@ Introduction to the `Overlap` class. This notebook demonstrates how to
 - generate an overlap matrix,
 - reproduce the Gaussian approximation of the BCS overlap presented in the paper.
 
+### phase_basis_and_phase_operators.ipynb
+
+Introduction to the `PhaseBasis` and `PhaseOperators` claases. This notebook demonstrates how to
+
+- contruct a discretised phase basis, with an automatically determined effective dimension of the Hilbert space
+- generate the phase grid
+- construct an identity operator
+- construct a phase operator.
+
+
 ## Running the examples
 
 Install the package first:

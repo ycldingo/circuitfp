@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.1.3
+
+### Added
+- Added `PhaseOperators`:
+  - identity operator
+  - phase operator
+- Added unit tests for all modules above.
+- Added `to_dict()` and `__repr__()` support for basis inspection.
+- Added notebook `examples/BCS_overlap.ipynb`.
+
 
 ## v0.1.2
 

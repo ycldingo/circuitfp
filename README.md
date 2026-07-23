@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.1.2-cyan)
+![Version](https://img.shields.io/badge/version-0.1.3-cyan)
 ![Primary](https://img.shields.io/badge/Primary-Python-blue?logo=python&logoColor=white)
 ![Secondary](https://img.shields.io/badge/Secondary-Mathematica-red?logo=wolfram&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -25,11 +25,11 @@ This project is based on
 - Overlap of BCS phase states
 - Overlap matrix in phase representation
 - Phases basis construction
+- Phase operators
 - Unit tests
 
 ### Future versions will include
 - Fourier transform between phase and number space
-- Phase operator
 - Number operator
 - Hamiltonian projection
 - and more...
@@ -42,15 +42,18 @@ circuitfp/
 │   └── circuitfp/
 │       ├── overlap.py
 │       ├── phase_basis.py
+│       ├── operators.py
 │       ├── ...
 │
 ├── tests/
 │       ├── test_overlap.py
 │       ├── test_phase_basis.py
+│       ├── test_operators.py
 │       ├── ...
 │
 ├── examples/
-│       ├── BCS_overlap.py
+│       ├── BCS_overlap.ipynb
+│       ├── phase_basis_and_phase_operators.ipynb
 │       ├── ...
 │
 ├── docs/
