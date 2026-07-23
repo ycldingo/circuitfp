@@ -26,6 +26,7 @@ This project is based on
 - Overlap matrix in phase representation
 - Phases basis construction
 - Phase operators
+- Example jupyter notebooks
 - Unit tests
 
 ### Future versions will include
