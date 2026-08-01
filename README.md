@@ -62,6 +62,8 @@ circuitfp/
 │       ├── development.md
 │       ├── CHANGELOG.md
 │       ├── Overlap.md
+│       ├── PhaseBasis.md
+│       ├── PhaseOperators.md
 │       ├── Liao_et_al_-_2025_-_Circuit_quantization_from_first_principles.pdf
 │       ├── ...
 │
