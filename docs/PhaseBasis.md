@@ -40,16 +40,14 @@ When `dimension` is not provided, the class automatically uses the effective dim
 - `gap`: superconducting gap amplitude, type `float`
 - `n`: number of electronic modes, type `int`
 - `dimension`: number of phase states, tyoe `int` (optional)
-    - If `dimension=None`, use $\mathsc{d} = \mathsc{d}_\text{eff}$
-    - If $\mathsc{d} <> \mathsc{d}_\text{eff}$, a warning is issued and $\mathsc{d} = \mathsc{d}_\text{eff}$
-    - If $\mathsc{d} > \mathsc{d}_\text{eff}$, the user-defined demension is accepted.
+    - If `dimension=None`, use $\mathsf{d} = \mathsf{d}_\text{eff}$
+    - If $\mathsf{d} < \mathsf{d}_\text{eff}$, a warning is issued and $\mathsc{d} = \mathsf{d}_\text{eff}$
+    - If $\mathsf{d} > \mathsf{d}_\text{eff}$, the user-defined demension is accepted.
 
 ## Phase grid
 
 The phase basis is constructed on a uniform grid, $\phi_j = -\pi + \delta\phi j$, where 
-$$
-\delta\phi = \frac{2\pi}{\mathsc{d}}.
-$$
+$$\delta\phi = \frac{2\pi}{\mathsf{d}}.$$
 An example implementation is 
 
 ```python
@@ -59,9 +57,30 @@ print(basis.phase_grid)
 
 returns `[-3.1415, -2.3561, -1.5708, -0.7854, 0, 0.7854, 1.5708, 2.3561]`.
 
+## Fourier matrix
+
+The discrete Fourier transformation is defined by
+$$| \Psi(N) \rangle = \frac{1}{\sqrt{\mathsf{d}}} \sum_j e^{-i N \phi_j} |\Psi(\phi_j)\rangle.$$
+
+```python
+fourier_matrix_phase2number = basis.fourier_matrix()
+```
+
+The returned matrix is a $\mathsf{d}\times\mathsf{d}$ unitary matrix.
+
+### Number basis
+
+The discretised number basis can be either obtained from the Fourier transform of the phase basis or manually generate. The number basis is labelled as $$N = 0,1,\cdots,\mathsf{d}-1$$, where $\mathsf{d}$ is the dimension of the Hilbert space.
+
+```python
+basis.number_grid()
+```
+
+
+
 ## Attributes
 
-`bandwidth`, `gap`, `num_modes`, `effective_dimension`, `dimension`, `phase_spacing`, `phase_grid`.
+`bandwidth`, `gap`, `num_modes`, `effective_dimension`, `dimension`, `phase_spacing`, `phase_grid`, `number_grid`, `fourier_matrix`.
 
 ## Dictionary representation
 

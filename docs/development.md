@@ -1,6 +1,6 @@
 # Development notes
 
-**Current version: 0.1.2**
+**Current version: 0.2.0**
 
 ## Implemented
 
@@ -13,6 +13,7 @@
 - operators in phase space, including
     - identity operator
     - phase operator
+- Fourier transform matrix from phase space to number space
 
 ### Documentation
 
@@ -25,6 +26,21 @@
 - Fourier transform
 - Number operator
 - Hamiltonian
+
+## Preliminary roadmap
+```
+src/
+└── circuitfp/
+    ├── __init__.py
+    ├── phase_basis.py
+    ├── overlap.py
+    ├── operators.py
+    ├── projector.py
+    ├── hamiltonian.py
+    ├── wire.py
+    ├── constants.py
+    └── utils.py
+```
 
 ## Coding conventions
 

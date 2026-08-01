@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/badge/version-0.1.3-cyan)
+![Version](https://img.shields.io/badge/version-0.2.0-cyan)
 ![Primary](https://img.shields.io/badge/Primary-Python-blue?logo=python&logoColor=white)
 ![Secondary](https://img.shields.io/badge/Secondary-Mathematica-red?logo=wolfram&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -24,13 +24,13 @@ This project is based on
 ### Current features
 - Overlap of BCS phase states
 - Overlap matrix in phase representation
-- Phases basis construction
+- Phases & number basis construction
 - Phase operators
+- Fourier transform matrix
 - Example jupyter notebooks
 - Unit tests
 
 ### Future versions will include
-- Fourier transform between phase and number space
 - Number operator
 - Hamiltonian projection
 - and more...

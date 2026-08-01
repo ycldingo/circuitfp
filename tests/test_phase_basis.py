@@ -3,6 +3,7 @@ import numpy as np
 import pytest
 
 
+
 def test_initialisation():
     basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000)
     assert basis.bandwidth == 1.0
@@ -68,6 +69,63 @@ def test_phase_grid_spacing():
     assert np.allclose(expected, basis.phase_spacing)
 
 
+# tests for Fourier transform
+def test_number_grid():
+    basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000, dimension=100)
+    expected = np.arange(basis.dimension)
+    number = basis.number_grid
+
+    np.testing.assert_array_equal(number, expected)
+
+
+def test_fourier_shape():
+    basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000, dimension=100)
+
+    U = basis.fourier_matrix()
+
+    assert U.shape == (basis.dimension, basis.dimension)
+
+
+def test_fourier_unitary():
+    basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000, dimension=100)
+    U = basis.fourier_matrix()
+    I = U.conj().T @ U
+
+    np.testing.assert_allclose(
+        I,
+        np.eye(basis.dimension),
+        atol=1e-12
+    )
+
+
+def test_fourier_column_norm():
+    basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000, dimension=100)
+    U = basis.fourier_matrix()
+    norms = np.linalg.norm(
+        U,
+        axis=0
+    )
+
+    np.testing.assert_allclose(
+        norms,
+        np.ones(basis.dimension)
+    )
+
+
+def test_fourier_row_norm():
+    basis = PhaseBasis(bandwidth=1.0, gap=0.1, num_modes=1000, dimension=100)
+    U = basis.fourier_matrix()
+    norms = np.linalg.norm(
+        U,  
+        axis=1
+    )
+
+    np.testing.assert_allclose(
+        norms,
+        np.ones(basis.dimension)
+    )
+
+
 # test for system parameters
 def test_invalid_param():
     with pytest.raises(ValueError):
@@ -97,4 +155,5 @@ def test_repr():
     assert "PhaseBasis" in repr_str
     assert "bandwidth" in repr_str
     assert "gap" in repr_str
+
 

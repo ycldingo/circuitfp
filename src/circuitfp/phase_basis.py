@@ -51,7 +51,37 @@ class PhaseBasis:
                              (2 * self.bandwidth)
                          ))
         return max(1, int(np.ceil(effective_dim)))
-    
+
+
+    @property
+    def number_grid(self):
+        """ 
+        Retun the number-basis indices.
+
+        The discrete number basis is labelled by
+            N = 0, 1, ..., d-1, 
+        where d is the dimension of the Hilbert space.
+        """
+        return np.arange(self.dimension)
+
+
+    def fourier_matrix(self):
+        """
+        Construct the discrete Fourier transformation matrix between the phase basis and the number basis.
+
+        The transformation is defined as
+
+            |N> = (1/sqrt(d))  Σ_j exp(-i N φ_j) |φ_j>,
+
+        where d : Hilbert-space dimension.
+        """
+
+        phase = self.phase_grid[:, None]
+        number = self.number_grid[None, :]
+        
+        # Compute the Fourier transformation matrix
+        matrix = np.exp(-1j * number * phase) / np.sqrt(self.dimension)
+        return matrix
 
     def to_dict(self):
         return {
@@ -74,5 +104,7 @@ class PhaseBasis:
             f"    dimension={self.dimension}\n"
             ")"
         )
+
+    
 
     

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.0
+
+### Added
+
+- Added `PhaseBasis.number_grid()`
+- Added `PhaseBasis.fourier_matrix()`
+- Added unit tests for the Fourier transformatrix.
+
 ## v0.1.3
 
 ### Added
