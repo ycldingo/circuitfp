@@ -10,9 +10,7 @@ This class is designed for constructing the phase basis used in microscopic circ
 # Physical background
 
 For a superconducting degree of freedom, the phase variable can be represented in a finite-dimensional Hilbert space when only the relevant low-energy subspace is considered. The required number of basis states is controlled by the effective dimensionality:
-$$
-\mathsf{d}_\text{eff} = \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}},
-$$
+$$\mathsf{d}_\text{eff} = \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}},$$
 where $n$ is the number of electronic modes, $\Delta$ is the superconducting gap, and $\mathcal{B}$ is half of the electron bandwidth.
 
 The implementation uses the ceiling value, $\lceil \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}} \rceil$ to ensure that the basis dimension is sufficient.
