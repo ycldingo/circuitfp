@@ -10,7 +10,9 @@ This class is designed for constructing the phase basis used in microscopic circ
 # Physical background
 
 For a superconducting degree of freedom, the phase variable can be represented in a finite-dimensional Hilbert space when only the relevant low-energy subspace is considered. The required number of basis states is controlled by the effective dimensionality:
+
 $$\mathsf{d}_\text{eff} = \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}},$$
+
 where $n$ is the number of electronic modes, $\Delta$ is the superconducting gap, and $\mathcal{B}$ is half of the electron bandwidth.
 
 The implementation uses the ceiling value, $\lceil \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}} \rceil$ to ensure that the basis dimension is sufficient.
@@ -58,7 +60,9 @@ returns `[-3.1415, -2.3561, -1.5708, -0.7854, 0, 0.7854, 1.5708, 2.3561]`.
 ## Fourier matrix
 
 The discrete Fourier transformation is defined by
+
 $$| \Psi(N) \rangle = \frac{1}{\sqrt{\mathsf{d}}} \sum_j e^{-i N \phi_j} |\Psi(\phi_j)\rangle.$$
+
 
 ```python
 fourier_matrix_phase2number = basis.fourier_matrix()
