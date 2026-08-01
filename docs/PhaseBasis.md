@@ -11,7 +11,7 @@ This class is designed for constructing the phase basis used in microscopic circ
 
 For a superconducting degree of freedom, the phase variable can be represented in a finite-dimensional Hilbert space when only the relevant low-energy subspace is considered. The required number of basis states is controlled by the effective dimensionality:
 $$
-\mathsc{d}_\text{eff} = \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}},
+\mathsf{d}_\text{eff} = \frac{\pi}{2} \sqrt{\frac{n\Delta}{2\mathcal{B}}},
 $$
 where $n$ is the number of electronic modes, $\Delta$ is the superconducting gap, and $\mathcal{B}$ is half of the electron bandwidth.
 
@@ -41,7 +41,7 @@ When `dimension` is not provided, the class automatically uses the effective dim
 - `n`: number of electronic modes, type `int`
 - `dimension`: number of phase states, tyoe `int` (optional)
     - If `dimension=None`, use $\mathsf{d} = \mathsf{d}_\text{eff}$
-    - If $\mathsf{d} < \mathsf{d}_\text{eff}$, a warning is issued and $\mathsc{d} = \mathsf{d}_\text{eff}$
+    - If $\mathsf{d} < \mathsf{d}_\text{eff}$, a warning is issued and $\mathsf{d} = \mathsf{d}_\text{eff}$
     - If $\mathsf{d} > \mathsf{d}_\text{eff}$, the user-defined demension is accepted.
 
 ## Phase grid
