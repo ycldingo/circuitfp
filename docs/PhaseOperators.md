@@ -30,7 +30,7 @@ returns an identity matrix of dimension `dim`.
 
 Physics definition: $\hat{\phi} |\phi_j\rangle = \phi_j |\phi_j\rangle$.
 
-Matrix representation: $\hat{\phi} = \operatorname{diag} (\phi_1, \phi_2, \cdots)$.
+Matrix representation: $\hat{\phi} = \text{diag} (\phi_1, \phi_2, \cdots)$.
 
 Usage: 
 
